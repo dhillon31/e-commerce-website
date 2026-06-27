@@ -17,6 +17,14 @@ price: card.querySelector(".price").innerText,
 image: card.querySelector("img").src
 };
 
+  window.addEventListener("pageshow", () => {
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    document.getElementById("cartCount").innerText = cart.length;
+
+});
+
 cart.push(product);
 
 localStorage.setItem("cart", JSON.stringify(cart));
