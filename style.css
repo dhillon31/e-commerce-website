@@ -140,3 +140,31 @@
     background:white;
     margin-top:20px;
     }
+@media (max-width: 768px) {
+
+    nav{
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    nav ul li{
+        margin: 10px 0;
+    }
+
+    .cart-btn{
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    .logo{
+        margin-bottom: 10px;
+    }
+
+}
