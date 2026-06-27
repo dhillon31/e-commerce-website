@@ -64,7 +64,7 @@ document.getElementById("orderBtn")
 
 alert("Order Placed Successfully!");
 
-localStorage.removeItem("cart");
+localStorage.setItem("cart", JSON.stringify([]));
 
 window.location.reload();
 
