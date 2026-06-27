@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopHub</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2 class="logo">ShopHub</h2>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="cart.html" class="cart-btn">
+            Cart (<span id="cartCount">0</span>)
+        </a>
+    </nav>
+</header>
+
+<section class="hero">
+    <video autoplay muted loop>
+        <source src="videos/ecv.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <h1>Welcome to ShopHub</h1>
+        <p>Discover Amazing Products</p>
+        <a href="#products" class="shop-btn">Shop Now</a>
+    </div>
+</section>
+
+<section id="products">
+
+    <h2>Featured Products</h2>
+
+    <div class="product-container">
+
+        <div class="card">
+            <img src="images/earphone.jpg">
+            <h3>Wireless Headphones</h3>
+            <p class="price">rs2999</p>
+            <button class="addBtn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/watch.jpg">
+            <h3>Smart Watch</h3>
+            <p class="price">rs4999</p>
+            <button class="addBtn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/mouse.jpg">
+            <h3>Gaming Mouse</h3>
+            <p class="price">rs1999</p>
+            <button class="addBtn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/speaker.jpg">
+            <h3>Bluetooth Speaker</h3>
+            <p class="price">rs3499</p>
+            <button class="addBtn">Add to Cart</button>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="about" class="info">
+    <h2>About Us</h2>
+    <p>ShopHub provides premium products at affordable prices.</p>
+</section>
+
+<section id="contact" class="info">
+    <h2>Contact Us</h2>
+    <p>Email: support@shophub.com</p>
+    <p>Phone: +91 xxxxxxxxxx</p>
+</section>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
