@@ -17,7 +17,9 @@ return;
 
 cart.forEach((product,index)=>{
 
-let price = parseInt(product.price.replace("₹",""));
+let price = parseInt(product.price.replace(/[^\d]/g, ""));
+  if (isNaN(price)) price = 0;
+
 
 total += price;
 
